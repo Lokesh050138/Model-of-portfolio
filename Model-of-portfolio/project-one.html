@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-one</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .navbar-h{
+            background-color:rgb(190, 49, 68) ;
+            border-bottom: 2px solid black;
+        }
+
+        .navbar-h ul{
+            text-align: right;
+            height: 2.3rem;
+        }
+
+        .navbar-h ul li{
+            display: inline-block;
+            margin: .5rem 0;
+        }
+
+        .navbar-h ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            line-height: 2rem;
+            text-shadow: 2px 2px 5px black;
+            padding: 1rem;
+        }
+
+        .navbar-h ul li a:hover {
+            background: rgb(69, 86, 125);
+        }
+
+        .section {
+            background: linear-gradient(210deg, rgb(30, 30, 32), rgb(50, 52, 54));
+            height: 100vh;
+        }
+
+        .box {
+            background-color: transparent;
+            width: 100%;
+            padding-top: 20%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box h1 {
+            color: white;
+            font-size: 60px;
+            padding: 0.3rem;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .box p {
+            color: rgb(190, 49, 68);
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        .section2 {
+            background: rgb(48, 56, 65);
+            height: 100vh;
+        }
+
+        .section2 .box h1 {
+            font-size: 60px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .section2 .box p {
+            font-size: 30px;
+        }
+
+        .section2 ul {
+            display: inline-block;
+            text-align: center;
+            list-style: none;
+            padding: 3rem;
+        }
+
+        .section2 ul li {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .section2 ul li a {
+            text-decoration: none;
+            padding: 1rem;
+            color: white;
+            font-size: 25px;
+            display: flex;
+            transition: all 1s linear;
+            perspective: 1000;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .section2 ul li a:hover {
+            transform: rotateY(350deg);
+            color: rgb(190, 49, 68);
+        }
+
+        .section2 ul li a i {
+            margin-right: .4rem;
+        }
+
+        .line {
+            background: rgb(190, 49, 68);
+            width: 100%;
+            height: .3rem;
+        }
+
+        .section3 {
+            background: rgb(48, 56, 65);
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+
+        .section3 p {
+            padding: 2rem;
+        }
+
+        .section4 {
+            background: rgb(69, 86, 125);
+            text-align: center;
+        }
+
+        .section4 h1 {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .section4 .row {
+            padding: 5rem 1rem;
+        }
+
+        .section4 .card {
+            width: 100%;
+            margin-bottom: 2rem;
+            border: 0;
+            border-radius: 0;
+        }
+        .section4 .card .card-body{
+            background: rgb(48, 56, 65);
+            height: 3.5rem;
+        }
+        .section4 .card p a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        .section4 .card p a i{
+            display: none;
+            color: rgb(190, 49, 68);
+            transition: all 1s linear;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .section4 .card:hover i{
+            display: inline;
+        }
+
+        .section4 .card img {
+            height: 15rem;
+            border-radius: 0;
+        }
+        .section4 .btn{
+            border: 0;
+            border-radius: 0;
+            padding: .5rem 1.5rem;
+            background: rgb(48, 56, 65);
+            color: white;
+            font-size: 20px;
+            transition: all .3s linear;
+            margin-bottom: 2rem;
+        }
+        .section4 .btn:hover{
+            background: rgb(190, 49, 68);
+        }
+        .section4 .btn i{
+            transition: all .3s linear;
+            margin-left: 0;
+        }
+        .section4 .btn:hover i{
+            margin-left: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid navbar-h">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="box">
+            <h1>Hey I am Mimic</h1>
+            <p>a web developer</p>
+        </div>
+    </div>
+
+    <div class="container-fluid section4">
+        <h1>These are some of my projects</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./city-architecture-landscape-digital-art.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><a href="#"><i><</i> Image Number One <i>/ ></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./coastal-landscape-fantasy-style.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><a href="#"><i><</i> Image Number Two <i>/ ></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./digital-art-with-urban-landscape-architecture.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><a href="#"><i><</i> Image Number Three <i>/ ></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./MARGHERITA PIZZA.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><a href="#"><i><</i> Image Number Four <i>/ ></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./SPAGHETTI BOLOGNESE.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><a href="#"><i><</i> Image Number Five <i>/ ></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./UTTAPAM PIZZA.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><a href="#"><i><</i> Image Number Six <i>/ ></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">Show all <i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+
+
+    <div class="section2">
+        <div class="box">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="#">@ Send a mail</a></li>
+                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Call me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+
+    <div class="section3">
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+    </div>
+
+</body>
+
+</html>
